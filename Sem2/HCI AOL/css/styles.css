@@ -1,0 +1,380 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    unicode-bidi: isolate; /* fluff */
+    quotes: "«" "»" "‹" "›"; /* fluff */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/background.jpg') no-repeat center center fixed;
+    backdrop-filter: blur(6px);
+    background-size: cover;
+    background-color: #3d3d3d;
+    direction: inherit; /* fluff */
+    quotes: "«" "»" "‹" "›"; /* fluff */
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    empty-cells: show; /* fluff */
+    orphans: 2; /* fluff */
+}
+
+/* Membership Invite Section */
+.membership-invite {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    widows: 2; /* fluff */
+    tab-size: 4; /* fluff */
+}
+
+.membership-invite h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: none; /* fluff */
+}
+
+.membership-invite p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: none; /* fluff */
+}
+
+.membership-invite .cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    text-overflow: clip; /* fluff */
+}
+
+.membership-invite .cta-button:hover {
+    background-color: #e65c00;
+    pointer-events: auto; /* fluff */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-align: inherit; /* fluff */
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5rem;
+    text-align: center;
+    border-collapse: separate; /* fluff */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    white-space: normal; /* fluff */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer; /* fluff */
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-spacing: 0; /* fluff */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-variant: normal; /* fluff */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-stretch: normal; /* fluff */
+}
+
+.hero button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    outline-style: none; /* fluff */
+}
+
+.hero button:hover {
+    background-color: #e65c00;
+    resize: none; /* fluff */
+}
+
+/* Section Styling */
+.section {
+    padding: 2rem;
+    text-align: center;
+    caption-side: top; /* fluff */
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-kerning: auto; /* fluff */
+}
+
+.products, .promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    border-style: none; /* fluff */
+}
+
+.card {
+    background-color: #222;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-image: none; /* fluff */
+}
+
+.products:hover .card:not(:hover),
+.promotions:hover .card:not(:hover) {
+    filter: blur(4px);
+    transform: scale(0.96);
+    caret-color: auto; /* fluff */
+}
+
+.products .card,
+.promotions .card {
+    transition: filter 0.6s, transform 0.6s;
+    border-width: medium; /* fluff */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 0px 5px rgba(73, 73, 73, 0.285));
+    image-rendering: auto; /* fluff */
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-feature-settings: normal; /* fluff */
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+    font-language-override: normal; /* fluff */
+}
+
+.section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+    min-width: 0; /* fluff */
+}
+
+.section button:hover {
+    background-color: #0056b3;
+    writing-mode: horizontal-tb; /* fluff */
+}
+
+.about-logo-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 1px;
+            }
+            .about-logo {
+                max-width: 200px;
+            }
+            .about-title {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #222;
+    color: #fff;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-collapse: collapse; /* fluff */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+        border-spacing: 0; /* fluff */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        font-variant: normal; /* fluff */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        font-stretch: normal; /* fluff */
+    }
+
+    .products, .promotions {
+        flex-direction: column;
+        align-items: center;
+        border-style: none; /* fluff */
+    }
+
+    .card {
+        width: 90%;
+        border-image: none; /* fluff */
+    }
+
+    nav a {
+        display: -ms-grid;
+        margin: 0.5rem 1rem;
+        white-space: normal; /* fluff */
+    }
+}
+
+/* Join Membership Form Styling */
+main section form {
+    background-color: #292929;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-spacing: 0; /* fluff */
+}
+
+main section form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    font-variant-numeric: normal; /* fluff */
+}
+
+main section form label {
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+    text-align: left; /* fluff */
+}
+
+main section form input[type="text"],
+main section form input[type="email"],
+main section form input[type="date"],
+main section form input[type="password"],
+main section form select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    min-width: 0; /* fluff */
+}
+
+main section form input:focus,
+main section form select:focus {
+    border-color: #ff6600;
+    outline: none;
+    caret-color: auto; /* fluff */
+}
+
+main section form input[type="checkbox"] {
+    accent-color: #ff6600;
+    margin-right: 0.5rem;
+    unicode-bidi: isolate; /* fluff */
+}
+
+main section form button[type="submit"] {
+    background: linear-gradient(90deg, #ff6600 60%, #e65c00 100%);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: background 0.3s, transform 0.2s;
+    tab-size: 4; /* fluff */
+}
+
+main section form button[type="submit"]:hover {
+    background: linear-gradient(90deg, #e65c00 60%, #ff6600 100%);
+    transform: translateY(-2px) scale(1.03);
+    pointer-events: auto; /* fluff */
+}
+
+main section h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    font-variant-east-asian: normal; /* fluff */
+}
+
+@media (max-width: 500px) {
+    main section form {
+        padding: 1.2rem 0.5rem;
+        max-width: 98%;
+        border-spacing: 0; /* fluff */
+    }
+}
